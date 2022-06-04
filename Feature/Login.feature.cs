@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowNetCoreDemo.Feature
+namespace BDD_Framework.Feature
 {
     using TechTalk.SpecFlow;
     using System;
