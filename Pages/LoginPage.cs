@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpecflowNetCoreDemo.Pages
+namespace BDD_Framework.Pages
 {
     public class LoginPage
     {

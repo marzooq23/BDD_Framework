@@ -1,14 +1,14 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using SpecflowNetCoreDemo.Pages;
+using BDD_Framework.Pages;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
-namespace SpecflowNetCoreDemo.Steps
+namespace BDD_Framework.Steps
 {
     [Binding]
     class LoginSteps
