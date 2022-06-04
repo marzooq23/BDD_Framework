@@ -16,11 +16,13 @@ namespace SpecflowNetCoreDemo.Steps
         // Anti context Injection code
         LoginPage loginPage = null;
 
+        IWebDriver driver;
+
         //steps definition
         [Given(@"I launch the application")]
         public void GivenILaunchTheApplication()
         {
-            IWebDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.Navigate().GoToUrl("http://eaapp.somee.com");
             driver.Manage().Window.Maximize();
             loginPage = new LoginPage(driver);
@@ -50,8 +52,14 @@ namespace SpecflowNetCoreDemo.Steps
         public void ThenIShouldSeeEmployeeDetailsLink()
         {
             Assert.IsTrue(loginPage.IsEmployeeDetailsExists());
-         
         }
+
+        [Given(@"I Close the appliation")]
+        public void GivenICloseTheAppliation()
+        {
+            driver.Close();
+        }
+
 
     }
 }

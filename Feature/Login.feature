@@ -11,3 +11,4 @@ Scenario: Perform Login in EA Application Site
 		| admin    | password |
 	And I click login button	
 	Then I should see Employee details link
+	Given I Close the appliation
